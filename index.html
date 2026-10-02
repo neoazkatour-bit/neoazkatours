@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Azka Tour Bali - Paket Wisata & Sewa Mobil Bali Terpercaya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Plus Jakarta Sans & Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles & Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ocean: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#0f172a'
+                        },
+                        baliGold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706'
+                        },
+                        sunset: {
+                            500: '#f97316',
+                            600: '#ea580c'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.65)), 
+                        url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-ocean-500 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-globe text-ocean-500"></i> www.neoazkatoursbali.com</span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-baliGold-500"></i> Denpasar & Badung, Bali</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+6281234567890" class="hover:text-white transition"><i class="fa-solid fa-phone text-emerald-400 mr-1"></i> +62 812-3456-7890</a>
+                <span class="text-slate-600">|</span>
+                <div class="flex gap-2 text-slate-400">
+                    <a href="#" class="hover:text-baliGold-400"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-baliGold-400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-baliGold-400"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-50 glass-nav transition-all duration-300 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-ocean-600 to-baliGold-500 flex items-center justify-center text-white text-xl font-bold shadow-md shadow-ocean-500/20">
+                        <i class="fa-solid fa-compass text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif text-2xl font-bold tracking-tight text-slate-900 block leading-none">Neo Azka Tour</span>
+                        <span class="text-[11px] font-semibold tracking-widest text-baliGold-600 uppercase">Bali Specialist</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-700">
+                    <a href="#beranda" class="hover:text-ocean-600 transition">Beranda</a>
+                    <a href="#keunggulan" class="hover:text-ocean-600 transition">Mengapa Kami</a>
+                    <a href="#paket" class="hover:text-ocean-600 transition">Paket Wisata</a>
+                    <a href="#sewa-mobil" class="hover:text-ocean-600 transition">Sewa Mobil</a>
+                    <a href="#galeri" class="hover:text-ocean-600 transition">Galeri</a>
+                    <a href="#testimoni" class="hover:text-ocean-600 transition">Testimoni</a>
+                    <a href="#kontak" class="hover:text-ocean-600 transition">Kontak</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Neo%20Azka%20Tour%20Bali,%20saya%20ingin%20tanya%20informasi%20paket%20wisata." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-full text-sm shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Chat WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-700 focus:outline-none p-2 rounded-lg hover:bg-slate-100">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="block py-2 font-medium text-slate-700 hover:text-ocean-600 border-b border-slate-100">Beranda</a>
+            <a href="#keunggulan" class="block py-2 font-medium text-slate-700 hover:text-ocean-600 border-b border-slate-100">Mengapa Kami</a>
+            <a href="#paket" class="block py-2 font-medium text-slate-700 hover:text-ocean-600 border-b border-slate-100">Paket Wisata</a>
+            <a href="#sewa-mobil" class="block py-2 font-medium text-slate-700 hover:text-ocean-600 border-b border-slate-100">Sewa Mobil</a>
+            <a href="#galeri" class="block py-2 font-medium text-slate-700 hover:text-ocean-600 border-b border-slate-100">Galeri</a>
+            <a href="#testimoni" class="block py-2 font-medium text-slate-700 hover:text-ocean-600 border-b border-slate-100">Testimoni</a>
+            <a href="#kontak" class="block py-2 font-medium text-slate-700 hover:text-ocean-600 border-b border-slate-100">Kontak</a>
+            <a href="https://wa.me/6281234567890?text=Halo%20Neo%20Azka%20Tour%20Bali,%20saya%20ingin%20konsultasi%20tour." 
+               target="_blank" 
+               class="flex items-center justify-center gap-2 bg-emerald-600 text-white font-semibold py-3 rounded-xl text-center mt-4">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Hubungi via WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative hero-bg min-h-[90vh] flex items-center justify-center pt-12 pb-24 px-4 sm:px-6">
+        <div class="max-w-5xl mx-auto text-center text-white space-y-6">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 text-xs sm:text-sm font-medium text-baliGold-400">
+                <i class="fa-solid fa-crown text-xs"></i> Tour & Travel Agent Resmi Bali
+            </div>
+            
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                Jelajahi Keindahan Pulau Dewata Bersama <span class="text-gradient">Neo Azka Tour Bali</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed">
+                Nikmati pengalaman liburan tak terlupakan di Bali dengan layanan private tour premium, driver ramah berpengalaman, serta armada mobil terbaru & nyaman.
+            </p>
+
+            <div class="pt-2 flex flex-wrap justify-center gap-4">
+                <a href="#paket" class="bg-gradient-to-r from-ocean-500 to-ocean-600 hover:from-ocean-600 hover:to-ocean-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-ocean-600/30 transition transform hover:-translate-y-1">
+                    <i class="fa-solid fa-compass mr-2"></i> Lihat Paket Wisata
+                </a>
+                <a href="#sewa-mobil" class="bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-semibold px-8 py-4 rounded-xl border border-white/30 transition">
+                    <i class="fa-solid fa-car mr-2"></i> Sewa Mobil Bali
+                </a>
+            </div>
+
+            <!-- SEARCH / QUICK BOOKING WIDGET -->
+            <div class="mt-12 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl text-slate-800 text-left border border-white/50 max-w-4xl mx-auto">
+                <h3 class="text-sm font-bold text-ocean-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-baliGold-500"></i> Cari & Booking Liburan Impian
+                </h3>
+                <form id="hero-booking-form" onsubmit="handleHeroSubmit(event)" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-500 mb-1">Rencana Tanggal</label>
+                        <div class="relative">
+                            <i class="fa-regular fa-calendar absolute left-3 top-3 text-slate-400"></i>
+                            <input type="date" id="hero-date" required class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-ocean-500">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-500 mb-1">Jumlah Peserta</label>
+                        <div class="relative">
+                            <i class="fa-solid fa-users absolute left-3 top-3 text-slate-400"></i>
+                            <select id="hero-pax" class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-ocean-500">
+                                <option value="1-2 Orang">1 - 2 Orang (Pasangan)</option>
+                                <option value="3-5 Orang">3 - 5 Orang (Keluarga)</option>
+                                <option value="6-10 Orang">6 - 10 Orang (Rombongan)</option>
+                                <option value="10+ Orang">Diatas 10 Orang (Group Tour)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-500 mb-1">Jenis Layanan</label>
+                        <div class="relative">
+                            <i class="fa-solid fa-map-location-dot absolute left-3 top-3 text-slate-400"></i>
+                            <select id="hero-package" class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-ocean-500">
+                                <option value="Paket Tour 3H2M">Paket Tour 3 Hari 2 Malam</option>
+                                <option value="Paket Tour 4H3M">Paket Tour 4 Hari 3 Malam</option>
+                                <option value="Honeymoon Romantic">Paket Honeymoon Bali</option>
+                                <option value="One Day Nusa Penida">One Day Nusa Penida</option>
+                                <option value="Sewa Mobil Driver">Sewa Mobil + Driver</option>
+                                <option value="Custom Tour">Custom Request Tour</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex items-end">
+                        <button type="submit" class="w-full bg-baliGold-500 hover:bg-baliGold-600 text-slate-900 font-bold py-2.5 rounded-lg transition shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Cek Ketersediaan</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="keunggulan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ocean-600 font-bold text-xs uppercase tracking-widest bg-ocean-50 px-3 py-1 rounded-full">Keunggulan Layanan</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3">Mengapa Memilih Neo Azka Tour Bali?</h2>
+                <p class="text-slate-600 mt-3 text-base">Kami berkomitmen memberikan kenyamanan, keamanan, dan kenangan liburan terbaik tanpa rasa khawatir selama berada di Pulau Dewata.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-ocean-200 hover:shadow-xl transition group duration-300">
+                    <div class="w-14 h-14 bg-ocean-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition shadow-lg shadow-ocean-500/30">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Driver & Guide Ramah</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Pengemudi profesional, berpengalaman, jujur, serta paham betul seluruh seluk beluk spot wisata Bali.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-baliGold-200 hover:shadow-xl transition group duration-300">
+                    <div class="w-14 h-14 bg-baliGold-500 text-slate-900 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition shadow-lg shadow-baliGold-500/30">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Harga Transparan</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Harga terbaik tanpa biaya tersembunyi (No Hidden Fee). Semua kesepakatan jelas dari awal reservasi.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-sunset-200 hover:shadow-xl transition group duration-300">
+                    <div class="w-14 h-14 bg-sunset-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition shadow-lg shadow-sunset-500/30">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Armada Bersih & Berseri</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Mobil senantiasa terawat berkala, wangi, ber-AC dingin, dan bersih siap menemani perjalanan Anda.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl transition group duration-300">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition shadow-lg shadow-emerald-500/30">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Custom Itinerary</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Bebas menentukan jadwal dan rute destinasi impian Anda bersama pasangan, keluarga, atau rombongan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOUR PACKAGES SECTION -->
+    <section id="paket" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-baliGold-600 font-bold text-xs uppercase tracking-widest bg-baliGold-50 px-3 py-1 rounded-full border border-baliGold-200">Destinasi Terpopuler</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3">Pilihan Paket Wisata Bali</h2>
+                <p class="text-slate-600 mt-3 text-base">Pilih paket liburan favorit Anda. Seluruh paket sudah termasuk armada private, driver, BBM, tiket masuk, dan mineral water.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12" id="package-filters">
+                <button onclick="filterPackages('all')" class="filter-btn active bg-ocean-600 text-white font-semibold px-5 py-2 rounded-full text-sm shadow transition">Semua Paket</button>
+                <button onclick="filterPackages('tour')" class="filter-btn bg-white hover:bg-slate-100 text-slate-700 font-semibold px-5 py-2 rounded-full text-sm border border-slate-200 transition">Paket Tour</button>
+                <button onclick="filterPackages('honeymoon')" class="filter-btn bg-white hover:bg-slate-100 text-slate-700 font-semibold px-5 py-2 rounded-full text-sm border border-slate-200 transition">Honeymoon</button>
+                <button onclick="filterPackages('nusa')" class="filter-btn bg-white hover:bg-slate-100 text-slate-700 font-semibold px-5 py-2 rounded-full text-sm border border-slate-200 transition">Nusa Penida</button>
+            </div>
+
+            <!-- Packages Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="package-grid">
+                
+                <!-- Package 1 -->
+                <div class="package-card tour bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Paket Tour 3H2M" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-ocean-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Best Seller</span>
+                        <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-3 py-1 rounded-md">
+                            <i class="fa-regular fa-clock text-baliGold-400 mr-1"></i> 3 Hari 2 Malam
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xs font-semibold text-ocean-600 uppercase">Private Tour</span>
+                                <div class="text-amber-500 text-xs font-bold"><i class="fa-solid fa-star"></i> 4.9 (128 Ulasan)</div>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Paket Tour Bali 3H2M Hits & Sunset</h3>
+                            <p class="text-slate-600 text-sm mb-4 line-clamp-2">Kunjungan ke Nusa Penida, Terasering Tegallalang Ubud, Kintamani Volcano View, dan Sunset Dinner Pantai Jimbaran.</p>
+                            <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Mobil Private Full AC & BBM</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tiket Fastboat Nusa Penida PP</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tiket Objek Wisata + Makan Siang</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[11px] text-slate-400 block">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-ocean-700">Rp 1.450.000 <span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openModal('pkg1')" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition">Detail</button>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Neo%20Azka%20Tour,%20saya%20tertarik%20booking%20Paket%20Tour%203H2M" target="_blank" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition flex items-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> Booking
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card tour bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80" alt="Paket Tour 4H3M" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-baliGold-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow">Terfavorit</span>
+                        <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-3 py-1 rounded-md">
+                            <i class="fa-regular fa-clock text-baliGold-400 mr-1"></i> 4 Hari 3 Malam
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xs font-semibold text-ocean-600 uppercase">Exotic Tour</span>
+                                <div class="text-amber-500 text-xs font-bold"><i class="fa-solid fa-star"></i> 5.0 (96 Ulasan)</div>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Paket Lengkap Bali 4H3M Bedugul</h3>
+                            <p class="text-slate-600 text-sm mb-4 line-clamp-2">Menjelajahi Pura Ulun Danu Beratan, Tanah Lot, Uluwatu Kecak Dance, Watersport Tanjung Benoa, dan pusat oleh-oleh khas Bali.</p>
+                            <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Hotel Berbintang Bintang 3/4</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Antar Jemput Bandara Ngurah Rai</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tiket Pertunjukan Tari Kecak</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[11px] text-slate-400 block">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-ocean-700">Rp 2.250.000 <span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openModal('pkg2')" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition">Detail</button>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Neo%20Azka%20Tour,%20saya%20tertarik%20booking%20Paket%20Tour%204H3M" target="_blank" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition flex items-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> Booking
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card honeymoon bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80" alt="Honeymoon Package" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-sunset-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Romantis</span>
+                        <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-3 py-1 rounded-md">
+                            <i class="fa-regular fa-clock text-baliGold-400 mr-1"></i> 3 Hari 2 Malam
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xs font-semibold text-sunset-500 uppercase">Honeymoon Special</span>
+                                <div class="text-amber-500 text-xs font-bold"><i class="fa-solid fa-star"></i> 5.0 (82 Ulasan)</div>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Paket Honeymoon Bali Romantis</h3>
+                            <p class="text-slate-600 text-sm mb-4 line-clamp-2">Momen mesra pasangan di Private Pool Villa, Romantic Candlelight Dinner Pantai Jimbaran, Spa Bali, & Fotografer.</p>
+                            <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Private Pool Villa Setup Bunga</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Romantic Candlelight Dinner</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 2 Jam Traditional Spa Package</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[11px] text-slate-400 block">Harga Pasangan</span>
+                                <span class="text-xl font-extrabold text-ocean-700">Rp 4.800.000 <span class="text-xs font-normal text-slate-500">/couple</span></span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openModal('pkg3')" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition">Detail</button>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Neo%20Azka%20Tour,%20saya%20tertarik%20Paket%20Honeymoon" target="_blank" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition flex items-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> Booking
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card nusa bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=800&q=80" alt="One Day Nusa Penida" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Day Trip</span>
+                        <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-3 py-1 rounded-md">
+                            <i class="fa-regular fa-clock text-baliGold-400 mr-1"></i> 1 Hari (Full Day)
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xs font-semibold text-ocean-600 uppercase">Island Exploration</span>
+                                <div class="text-amber-500 text-xs font-bold"><i class="fa-solid fa-star"></i> 4.9 (210 Ulasan)</div>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">One Day Tour Nusa Penida Barat</h3>
+                            <p class="text-slate-600 text-sm mb-4 line-clamp-2">Kunjungi destinasi ikonik Kelingking Beach, Broken Beach, Angel's Billabong, dan Crystal Bay.</p>
+                            <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tiket Fastboat PP Sanur - Penida</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Mobil Private + Driver/Guide di Penida</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Makan Siang di Resto Penida</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[11px] text-slate-400 block">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-ocean-700">Rp 550.000 <span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openModal('pkg4')" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition">Detail</button>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Neo%20Azka%20Tour,%20saya%20tertarik%20One%20Day%20Nusa%20Penida" target="_blank" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition flex items-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i> Booking
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CAR RENTAL SECTION -->
+    <section id="sewa-mobil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ocean-600 font-bold text-xs uppercase tracking-widest bg-ocean-50 px-3 py-1 rounded-full">Transportasi Murah & Nyaman</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3">Layanan Sewa Mobil Bali + Driver</h2>
+                <p class="text-slate-600 mt-3 text-base">Sewa mobil private dengan pengemudi lokal ramah. Harga sudah termasuk Mobil, Driver, dan BBM selama 12 Jam.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Car Item 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-ocean-500 hover:shadow-xl transition duration-300">
+                    <div class="bg-white rounded-xl p-4 mb-4 flex items-center justify-center h-40">
+                        <i class="fa-solid fa-car text-6xl text-slate-400"></i>
+                    </div>
+                    <span class="text-xs font-bold text-baliGold-600 uppercase bg-baliGold-50 px-2.5 py-1 rounded">Ekonomis</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-2">Toyota All New Avanza</h3>
+                    <p class="text-xs text-slate-500 mb-4">Kapasitas: 5 - 6 Orang + Bagasi</p>
+                    <div class="text-xs space-y-2 text-slate-600 mb-6">
+                        <div class="flex justify-between"><span>Durasi:</span> <span class="font-semibold text-slate-800">12 Jam / Hari</span></div>
+                        <div class="flex justify-between"><span>Fasilitas:</span> <span class="font-semibold text-slate-800">Mobil + Driver + BBM</span></div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Sewa Per Hari</span>
+                            <span class="text-lg font-extrabold text-ocean-700">Rp 550.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Avanza" target="_blank" class="p-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl transition">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car Item 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-ocean-500 hover:shadow-xl transition duration-300">
+                    <div class="bg-white rounded-xl p-4 mb-4 flex items-center justify-center h-40">
+                        <i class="fa-solid fa-car-rear text-6xl text-ocean-600"></i>
+                    </div>
+                    <span class="text-xs font-bold text-ocean-600 uppercase bg-ocean-50 px-2.5 py-1 rounded">Kenyamanan Ekstra</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-2">Toyota Innova Reborn</h3>
+                    <p class="text-xs text-slate-500 mb-4">Kapasitas: 6 - 7 Orang + Bagasi</p>
+                    <div class="text-xs space-y-2 text-slate-600 mb-6">
+                        <div class="flex justify-between"><span>Durasi:</span> <span class="font-semibold text-slate-800">12 Jam / Hari</span></div>
+                        <div class="flex justify-between"><span>Fasilitas:</span> <span class="font-semibold text-slate-800">Mobil + Driver + BBM</span></div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Sewa Per Hari</span>
+                            <span class="text-lg font-extrabold text-ocean-700">Rp 800.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Innova%20Reborn" target="_blank" class="p-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl transition">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car Item 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-ocean-500 hover:shadow-xl transition duration-300">
+                    <div class="bg-white rounded-xl p-4 mb-4 flex items-center justify-center h-40">
+                        <i class="fa-solid fa-van-shuttle text-6xl text-sunset-500"></i>
+                    </div>
+                    <span class="text-xs font-bold text-sunset-600 uppercase bg-sunset-50 px-2.5 py-1 rounded">Rombongan</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-2">Toyota Hiace Commuter</h3>
+                    <p class="text-xs text-slate-500 mb-4">Kapasitas: 14 - 15 Kursi</p>
+                    <div class="text-xs space-y-2 text-slate-600 mb-6">
+                        <div class="flex justify-between"><span>Durasi:</span> <span class="font-semibold text-slate-800">12 Jam / Hari</span></div>
+                        <div class="flex justify-between"><span>Fasilitas:</span> <span class="font-semibold text-slate-800">Mobil + Driver + BBM</span></div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Sewa Per Hari</span>
+                            <span class="text-lg font-extrabold text-ocean-700">Rp 1.200.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Hiace" target="_blank" class="p-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl transition">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car Item 4 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-ocean-500 hover:shadow-xl transition duration-300">
+                    <div class="bg-white rounded-xl p-4 mb-4 flex items-center justify-center h-40">
+                        <i class="fa-solid fa-car-side text-6xl text-baliGold-600"></i>
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 uppercase bg-baliGold-400 px-2.5 py-1 rounded">VIP Premium</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-2">Toyota Alphard / Vellfire</h3>
+                    <p class="text-xs text-slate-500 mb-4">Kapasitas: 5 - 6 Kursi Luxury</p>
+                    <div class="text-xs space-y-2 text-slate-600 mb-6">
+                        <div class="flex justify-between"><span>Durasi:</span> <span class="font-semibold text-slate-800">12 Jam / Hari</span></div>
+                        <div class="flex justify-between"><span>Fasilitas:</span> <span class="font-semibold text-slate-800">Mobil + Driver VIP + BBM</span></div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Sewa Per Hari</span>
+                            <span class="text-lg font-extrabold text-ocean-700">Rp 2.500.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Alphard" target="_blank" class="p-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl transition">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="galeri" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-baliGold-400 font-bold text-xs uppercase tracking-widest bg-white/10 px-3 py-1 rounded-full border border-white/10">Dokumentasi Momen</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-3">Galeri Wisatawan Neo Azka Tour</h2>
+                <p class="text-slate-400 mt-3 text-base">Intip keseruan dan kebahagiaan para tamu yang telah mempercayakan liburan Bali mereka bersama kami.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Nusa Penida" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                        <span class="text-sm font-semibold text-baliGold-400"><i class="fa-solid fa-location-dot mr-1"></i> Kelingking Beach, Nusa Penida</span>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=600&q=80" alt="Ulun Danu Beratan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                        <span class="text-sm font-semibold text-baliGold-400"><i class="fa-solid fa-location-dot mr-1"></i> Bedugul, Bali</span>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80" alt="Ubud Rice Terrace" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                        <span class="text-sm font-semibold text-baliGold-400"><i class="fa-solid fa-location-dot mr-1"></i> Tegallalang, Ubud</span>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=600&q=80" alt="Sunset Pantai Jimbaran" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                        <span class="text-sm font-semibold text-baliGold-400"><i class="fa-solid fa-location-dot mr-1"></i> Pantai Jimbaran</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimoni" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ocean-600 font-bold text-xs uppercase tracking-widest bg-ocean-50 px-3 py-1 rounded-full">Kepuasan Pelanggan</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3">Kata Mereka Tentang Kami</h2>
+                <p class="text-slate-600 mt-3 text-base">Pengalaman nyata wisatawan yang merasakan pelayanan ramah dan profesional dari Neo Azka Tour Bali.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Pelayanan dari Neo Azka Tour luar biasa! Driver Pak Budi sangat ramah, selalu datang tepat waktu, dan tahu tempat makan halal yang enak. Anak-anak sangat senang!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-ocean-500 text-white flex items-center justify-center font-bold">R</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Rina Saraswati</h4>
+                            <span class="text-xs text-slate-400">Jakarta (Family Tour 4H3M)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Paket Honeymoon-nya top banget! Surprise dekorasi kamar villanya romantis abis. Dinner Jimbaran juga posisinya paling depan lihat sunset. Terima kasih Neo Azka Tour Bali!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-sunset-500 text-white flex items-center justify-center font-bold">A</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Andi & Maya</h4>
+                            <span class="text-xs text-slate-400">Surabaya (Honeymoon Tour)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Sewa mobil Hiace buat rombongan kantor. Mobil bersih banget, wangi, AC dingin. Driver pandai ambil foto yang bagus. Next time pasti pakai jasa Neo Azka lagi!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-baliGold-500 text-slate-900 flex items-center justify-center font-bold">H</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Hendra Wijaya</h4>
+                            <span class="text-xs text-slate-400">Bandung (Corporate Gathering)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & RESERVATION SECTION -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-ocean-900 to-slate-900 rounded-3xl overflow-hidden shadow-2xl text-white p-8 sm:p-12 lg:p-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Contact Info -->
+                    <div class="space-y-6">
+                        <span class="text-baliGold-400 font-bold text-xs uppercase tracking-widest bg-white/10 px-3 py-1 rounded-full border border-white/10">Hubungi Kami</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold">Siap Mengatur Liburan Impian Anda di Bali?</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Punya pertanyaan atau ingin custom paket perjalanan sesuai keinginan Anda? Tim CS kami siap melayani konsultasi gratis 24/7.
+                        </p>
+
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-ocean-600/50 border border-ocean-400/30 flex items-center justify-center text-baliGold-400 shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs text-slate-400 font-semibold uppercase">Alamat Kantor</h4>
+                                    <p class="text-sm font-medium text-slate-200">Jl. Raya Sunset Road No. 88X, Kuta, Badung, Bali - Indonesia</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-ocean-600/50 border border-ocean-400/30 flex items-center justify-center text-emerald-400 shrink-0">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs text-slate-400 font-semibold uppercase">WhatsApp / Call</h4>
+                                    <p class="text-sm font-medium text-slate-200">+62 812-3456-7890 (Fast Response)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-ocean-600/50 border border-ocean-400/30 flex items-center justify-center text-ocean-300 shrink-0">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs text-slate-400 font-semibold uppercase">Email Resmi</h4>
+                                    <p class="text-sm font-medium text-slate-200">info@neoazkatoursbali.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Contact Form -->
+                    <div class="bg-white text-slate-800 p-8 rounded-2xl shadow-xl">
+                        <h3 class="font-serif text-2xl font-bold text-slate-900 mb-2">Formulir Reservasi Fast-Track</h3>
+                        <p class="text-xs text-slate-500 mb-6">Isi formulir ini untuk langsung terhubung dengan admin via WhatsApp terformat.</p>
+
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Nama Lengkap</label>
+                                <input type="text" id="contact-name" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-ocean-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Nomor WhatsApp</label>
+                                <input type="tel" id="contact-phone" required placeholder="Contoh: 08123456789" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-ocean-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Pilihan Layanan</label>
+                                <select id="contact-service" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-ocean-500">
+                                    <option value="Paket Tour 3H2M">Paket Tour 3H2M</option>
+                                    <option value="Paket Tour 4H3M">Paket Tour 4H3M</option>
+                                    <option value="Paket Honeymoon">Paket Honeymoon</option>
+                                    <option value="One Day Nusa Penida">One Day Nusa Penida</option>
+                                    <option value="Sewa Mobil + Driver">Sewa Mobil Bali</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Pesan / Catatan Khusus</label>
+                                <textarea id="contact-message" rows="3" placeholder="Sebutkan tanggal atau rencana destinasi tambahan..." class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-ocean-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-lg shadow-md transition flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Kirim Pesan via WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 pt-16 pb-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                
+                <div class="space-y-4">
+                    <a href="#" class="flex items-center gap-2">
+                        <div class="w-9 h-9 rounded-lg bg-ocean-500 flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold text-white">Neo Azka Tour</span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Agen perjalanan wisata resmi Bali pilihan utama keluarga, grup, dan pasangan honeymoon. Menyediakan paket tur private dan sewa mobil terpercaya.
+                    </p>
+                    <div class="text-xs text-baliGold-400 font-medium">
+                        www.neoazkatoursbali.com
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Paket Populer</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#paket" class="hover:text-baliGold-400 transition">Paket Tour Bali 3H2M</a></li>
+                        <li><a href="#paket" class="hover:text-baliGold-400 transition">Paket Tour Bali 4H3M</a></li>
+                        <li><a href="#paket" class="hover:text-baliGold-400 transition">Paket Honeymoon Romantis</a></li>
+                        <li><a href="#paket" class="hover:text-baliGold-400 transition">One Day Tour Nusa Penida</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Sewa Mobil Bali</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#sewa-mobil" class="hover:text-baliGold-400 transition">Sewa Toyota Avanza Bali</a></li>
+                        <li><a href="#sewa-mobil" class="hover:text-baliGold-400 transition">Sewa Innova Reborn Bali</a></li>
+                        <li><a href="#sewa-mobil" class="hover:text-baliGold-400 transition">Sewa Toyota Hiace Bali</a></li>
+                        <li><a href="#sewa-mobil" class="hover:text-baliGold-400 transition">Sewa Toyota Alphard VIP</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Jam Operasional</h4>
+                    <p class="text-xs leading-relaxed mb-4">
+                        Senin - Minggu: 24 Jam Nonstop<br>
+                        Layanan CS Customer Care via WhatsApp.
+                    </p>
+                    <div class="flex gap-3 text-lg">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-ocean-600 text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-ocean-600 text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-ocean-600 text-white flex items-center justify-center transition"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Neo Azka Tour Bali (www.neoazkatoursbali.com). Hak Cipta Dilindungi.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-slate-400">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-slate-400">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PACKAGE DETAIL MODAL -->
+    <div id="modal-backdrop" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center text-slate-600">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div id="modal-content">
+                <!-- Content inserted dynamically via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Package Filter Logic
+        function filterPackages(category) {
+            const cards = document.querySelectorAll('.package-card');
+            const btns = document.querySelectorAll('.filter-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-ocean-600', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+
+            event.target.classList.remove('bg-white', 'text-slate-700');
+            event.target.classList.add('bg-ocean-600', 'text-white');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Hero Search Submit Handler
+        function handleHeroSubmit(e) {
+            e.preventDefault();
+            const date = document.getElementById('hero-date').value;
+            const pax = document.getElementById('hero-pax').value;
+            const packageType = document.getElementById('hero-package').value;
+
+            const message = `Halo Neo Azka Tour Bali (www.neoazkatoursbali.com), saya ingin reservasi/tanya ketersediaan:\n\n- *Paket*: ${packageType}\n- *Tanggal*: ${date}\n- *Jumlah Peserta*: ${pax}\n\nMohon info ketersediaan dan detail penawarannya. Terima kasih!`;
+            
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/6281234567890?text=${encoded}`, '_blank');
+        }
+
+        // Contact Form Submit Handler
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const service = document.getElementById('contact-service').value;
+            const message = document.getElementById('contact-message').value;
+
+            const waText = `Halo Admin Neo Azka Tour Bali,\n\nNama: ${name}\nNo HP: ${phone}\nPilihan Layanan: ${service}\nCatatan/Pesan: ${message}\n\nMohon info kelanjutannya.`;
+            
+            window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(waText)}`, '_blank');
+        }
+
+        // Modal Data
+        const packageDetails = {
+            pkg1: {
+                title: "Paket Tour Bali 3H2M Hits & Sunset",
+                duration: "3 Hari 2 Malam",
+                price: "Rp 1.450.000 / pax",
+                itinerary: [
+                    "Hari 1: Penjemputan Bandara Ngurah Rai, Check-in Hotel, Sunset Pantai Jimbaran Dinner Seafood.",
+                    "Hari 2: Day Trip Nusa Penida (Kelingking Beach, Broken Beach, Angel's Billabong, Lunch).",
+                    "Hari 3: Shopping Oleh-oleh Krisna/Agung Bali, Transfer Kembali ke Bandara."
+                ],
+                includes: ["Mobil Private Full AC & BBM", "Driver/Guide Lokal", "Tiket Fastboat Nusa Penida PP", "Makan Siang & Dinner Jimbaran", "Tiket Masuk Objek Wisata"]
+            },
+            pkg2: {
+                title: "Paket Lengkap Bali 4H3M Bedugul & Kecak",
+                duration: "4 Hari 3 Malam",
+                price: "Rp 2.250.000 / pax",
+                itinerary: [
+                    "Hari 1: Airport Pick Up + Pengatan Hotel & Sunset Pantai Kuta.",
+                    "Hari 2: Tour Bedugul Ulun Danu, Terasering Rice Terrace Ubud, & Pura Tanah Lot.",
+                    "Hari 3: Watersport Tanjung Benoa, Pantai Pandawa, Pura Uluwatu & Tari Kecak.",
+                    "Hari 4: Souvenir Shop Krisna & Transfer Airport."
+                ],
+                includes: ["Hotel Bintang 3 (3 Malam)", "Mobil Private + Driver + BBM", "Tiket Pertunjukan Tari Kecak Uluwatu", "Makan Pagi, Siang, Malam", "Driver Profesional"]
+            },
+            pkg3: {
+                title: "Paket Honeymoon Bali Romantis 3H2M",
+                duration: "3 Hari 2 Malam",
+                price: "Rp 4.800.000 / Pasangan",
+                itinerary: [
+                    "Hari 1: Welcome Drink & Flower Garland di Bandara, Check-in Private Pool Villa dengan Setup Bunga Romantis.",
+                    "Hari 2: Tour Sunset Uluwatu & Romantic Candlelight Dinner Pinggir Pantai Jimbaran.",
+                    "Hari 3: 2 Jam Traditional Spa Package + Souvenir Shopping & Airport Transfer."
+                ],
+                includes: ["Private Villa with Swimming Pool", "Honeymoon Floral Setup & Cake", "Romantic Candlelight Dinner", "2 Jam Massage & Spa Package", "Private Luxury Car"]
+            },
+            pkg4: {
+                title: "One Day Tour Nusa Penida Barat",
+                duration: "1 Hari Full Day",
+                price: "Rp 550.000 / pax",
+                itinerary: [
+                    "06:30 - Penjemputan Hotel Kuta/Denpasar menuju Pelabuhan Sanur.",
+                    "07:30 - Menyeberang dengan Fastboat ke Nusa Penida.",
+                    "09:00 - Mengunjungi Kelingking Beach, Broken Beach, & Angel Billabong.",
+                    "12:00 - Makan Siang Resto Lokal.",
+                    "14:00 - Bersantai di Crystal Bay Beach.",
+                    "16:30 - Kembali ke Fastboat Sanur & Drop Hotel."
+                ],
+                includes: ["Tiket Fastboat Sanur - Penida PP", "Mobil Private + Driver di Nusa Penida", "Makan Siang Resto", "Tiket Retribusi Wisata Penida"]
+            }
+        };
+
+        function openModal(pkgId) {
+            const data = packageDetails[pkgId];
+            if (!data) return;
+
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <div class="space-y-4">
+                    <span class="text-xs font-bold text-ocean-600 uppercase bg-ocean-50 px-2.5 py-1 rounded">Rincian Paket</span>
+                    <h3 class="font-serif text-2xl font-bold text-slate-900">${data.title}</h3>
+                    <div class="flex items-center gap-4 text-sm text-slate-600 border-b border-slate-100 pb-4">
+                        <span><i class="fa-regular fa-clock text-baliGold-500 mr-1"></i> ${data.duration}</span>
+                        <span><i class="fa-solid fa-tag text-emerald-500 mr-1"></i> ${data.price}</span>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm mb-2">Rencana Perjalanan (Itinerary):</h4>
+                        <ul class="space-y-2 text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            ${data.itinerary.map(item => `<li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-ocean-500 text-[10px] mt-1"></i> <span>${item}</span></li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm mb-2">Fasilitas Termasuk:</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
+                            ${data.includes.map(inc => `<div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> ${inc}</div>`).join('')}
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-100 flex gap-3">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Neo%20Azka%20Tour,%20saya%20ingin%20pesan%20${encodeURIComponent(data.title)}" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl text-center text-sm transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Booking via WhatsApp
+                        </a>
+                        <button onclick="closeModal()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-xl text-sm transition">Tutup</button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('modal-backdrop').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('modal-backdrop').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
